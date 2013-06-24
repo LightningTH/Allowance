@@ -1,0 +1,8 @@
+money.sh is put into init.d and setup with
+update-rc.d money.sh start 99
+
+start-money.sh is setup to not activate the actual script until the network starts to behave. IPs and paths will have to be adjusted accordingly
+
+money.py is the main script, there are a few global variables that have to be setup. The current setup uses the I2C library for the display and the GPIO library on IO18 and ground (pins 12 and 14) to activate the display
+
+The next iteration is to add either a few more buttons or a numeric usb keyboard and allow selection of items that wish to be bought (mini-golf as an example).
